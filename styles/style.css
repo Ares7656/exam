@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+.btn:hover{
+    background-color: whitesmoke;
+    color: blue;
+}
+img{
+    object-fit: cover;
+    height: 600px;
+    transition: all 0.4s;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+figure{
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}

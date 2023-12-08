@@ -8,43 +8,45 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <div class="container " >
+    <div class="container-fluid " style="max-width: 2000px;">
         <!-- nav start -->
-        <div class="row">
-            <div class="col-12 mb-3" >
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="row" >
+            <div class="col-12 mb-3 p-0" >
+                <nav class="navbar navbar-expand-lg " style="background-color: rgb(206, 205, 205);">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
+                      
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <form class="d-flex mt-2 mt-lg-0" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                           <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
                           </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
+                              Option
                             </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu p-0 rounded-2" >
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li><hr class="dropdown-divider m-0"></li>
+                              <li><a class="dropdown-item bg-danger rounded-bottom-1" href="#">Log Out</a></li>
                             </ul>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                          </li>
+                          
                         </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        
                       </div>
                     </div>
                   </nav>
@@ -53,27 +55,94 @@
         <!-- nav END -->
         <!-- cards start -->
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3">
-            <div class="box rounded-1 bg-danger" style="height: 200px;"></div>
+          
+          <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3 mb-3 mb-lg-0">
+            <div class="card  text-white" style=" height: 200px; background-image: linear-gradient(to right , rgb(98, 0, 255) , rgb(110, 84, 255));">
+            
+            <div class="card-body d-flex">
+              <div class="col-6 d-flex flex-column justify-content-center ">
+                <h5 class="card-title ">Product Sold</h5>
+              <h3 class="card-text ">4658</h3>
+              <p class="card-text">Jan - March 2019</p>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3 mb-3 mb-lg-0">
+            <div class="card  text-white" style=" height: 200px; background-image: linear-gradient(to right , rgb(255, 137, 176) , rgb(255, 58, 157));">
+            
+            <div class="card-body d-flex">
+              <div class="col-6 d-flex flex-column justify-content-center ">
+                <h5 class="card-title ">Net Profit</h5>
+              <h3 class="card-text ">$ 8541</h3>
+              <p class="card-text">Jan - March 2019</p>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                  <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                  <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3 mb-3 mb-md-0">
+            <div class="card  text-white" style=" height: 200px; background-image: linear-gradient(to right , rgb(255, 104, 34) , rgb(255, 176, 123));">
+            
+            <div class="card-body d-flex">
+              <div class="col-6 d-flex flex-column justify-content-center ">
+                <h5 class="card-title ">New Customers</h5>
+              <h3 class="card-text ">4565</h3>
+              <p class="card-text">Jan - March 2019</p>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3 mb-3 mb-md-0">
+            <div class="card  text-white" style=" height: 200px; background-image: linear-gradient(to right , rgb(66, 0, 172) , rgb(120, 96, 255));">
+            
+            <div class="card-body d-flex">
+              <div class="col-6 d-flex flex-column justify-content-center ">
+                <h5 class="card-title ">Customer Satisfaction</h5>
+              <h3 class="card-text ">99%</h3>
+              <p class="card-text">Jan - March 2019</p>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+          </div>
         </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-md-0 mt-3">
-            <div class="box rounded-1 bg-danger" style="height: 200px;"></div>
-        </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
-            <div class="box rounded-1 bg-danger" style="height: 200px;"></div>
-        </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
-            <div class="box rounded-1 bg-danger" style="height: 200px;"></div>
-        </div>
-        </div>
+        
         <!-- cards END -->
         <!-- Nemodar start -->
         <div class="row">
-            <div class="col-12 col-md-9  ">
-            <div class="box bg-black mt-3 rounded-1" style="height: 350px;"></div>
+            <div class="col-12 col-md-6  ">
+              <figure class="mt-3 " >
+                <img src="img/856169.jpg" class=" w-100"  alt="">
+              </figure>
             </div>
-            <div class="col-12 col-md-3  ">
-            <div class="box bg-black mt-3 rounded-1" style="height: 350px;"></div>
+            <div class="col-12 col-md-6  ">
+              <figure class="mt-3 " >
+                <img src="img/abstract-3840x2160-polygon-4k-5k-iphone-wallpaper-android-wallpaper-12740.jpg" class=" w-100" alt="">
+              </figure>
             </div>
         </div>
         <!-- Nemodar END -->
